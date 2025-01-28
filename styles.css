@@ -1,173 +1,49 @@
-/* styles.css */
-
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif;
     margin: 0;
-    background-color: #f0f0f0; /* Hellgrauer Hintergrund */
-    color: #333; /* Dunkelgraue Schriftfarbe */
-    overflow-x: hidden; /* Verhindert horizontalen Scrollbalken */
+    padding: 0;
 }
 
-#landing-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #fff; /* Weißer Hintergrund für die Landing Page */
-}
-
-#landing-page img {
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
-#landing-page h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-#landing-page p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-#landing-page button {
-    background-color: #007bff; /* Blaue Farbe für den Button */
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-nav {
+header {
     background-color: #333;
-    color: #fff;
-    padding: 10px;
+    color: white;
+    padding: 1rem;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
 }
 
-nav li a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.5rem 1rem;
 }
 
-#sprache-menu {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+main {
+    padding: 2rem;
 }
 
-#sprache-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+section {
+    margin-bottom: 2rem;
 }
 
-#sprache-menu li a {
-    color: #333;
-    text-decoration: none;
-    padding: 5px 10px;
-    background-color: #eee;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-
-#benutzer-info {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px;
-    background-color: #eee;
-}
-
-#benutzer-info button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#benutzer-menu {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#benutzer-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#benutzer-menu li a {
-    color: #333;
-    text-decoration: none;
-    padding: 5px 0;
-    display: block;
-}
-
-#online-benutzer {
-    padding: 10px;
-    background-color: #f0f0f0;
-}
-
-#spenden {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 20px;
-}
-
-.spenden-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#visualisierung {
+#visualizer {
     width: 100%;
     height: 400px;
-    background-color: #000;
+    background-color: black;
 }
 
-.regler {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed; /* Footer am unteren Rand fixieren */
+    bottom: 0;
+    width: 100%;
 }
-
-.regler label {
-    margin-bottom: 5px;
-}
-
-.regler input[type="range"] {
-    width: 200px;
-}
-
-/* ... weitere CSS-Regeln nach Bedarf ... */
