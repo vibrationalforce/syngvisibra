@@ -1,28 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyngVisibra - Visualisiere deine Vibration</title>
-    <meta name="description"
-        content="Entfalte dein volles Potenzial durch Singen und Visualisieren mit SyngVisibra. Erlebe die Kraft der Synchronisation und stärke dich selbst.">
-    <meta name="keywords" content="Singen, Meditation, Biofeedback, Synchronisation, Visualisierung, Musik, Technologie, Gesundheit">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div id="landing-page">
-        <img src="michael-terbuyken.jpg" alt="SyngVisibra Logo - Michael Terbuyken">
+    <header>
         <h1>SyngVisibra</h1>
-        <p>Entfalte dein volles Potenzial durch Singen und Visualisieren.</p>
-        <button onclick="startSyngVisibra()">Jetzt starten</button>
-    </div>
-
-    <div id="app" style="display: none;">
         <nav>
             <ul>
                 <li><a href="#visualisierung">Visualisierung</a></li>
@@ -32,72 +18,35 @@
                 <li><a href="#einstellungen">Einstellungen</a></li>
             </ul>
         </nav>
+    </header>
 
-        <div id="sprache-menu">
-            <ul>
-                <li><a href="#" onclick="changeLanguage('de')">Deutsch</a></li>
-                <li><a href="#" onclick="changeLanguage('en')">English</a></li>
-            </ul>
-        </div>
+    <main>
+        <section id="visualisierung">
+            <h2>Visualisierung</h2>
+            <canvas id="visualizer"></canvas>
+        </section>
 
-        <div id="benutzer-info">
-            <span id="benutzername">Gast</span>
-            <button onclick="toggleBenutzerMenu()">Benutzer-Menü</button>
-            <div id="benutzer-menu" style="display: none;">
-                <ul>
-                    <li><a href="#">Profil</a></li>
-                    <li><a href="#">Einstellungen</a></li>
-                    <li><a href="#">Abmelden</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="online-benutzer"></div>
-
-        <div id="spenden">
-            <h2>Unterstütze SyngVisibra!</h2>
-            <p>Wenn dir SyngVisibra gefällt, kannst du die Entwicklung mit einer Spende unterstützen.
-                Jeder Beitrag, ob groß oder klein, ist willkommen und wird geschätzt.
-                Klicke auf den Link, um zu PayPal zu gelangen.</p>
-            <a href="https://paypal.me/echoel" class="spenden-button">Spende um SyngVisibra
-                weiterzubringen</a>
-        </div>
-
-        <canvas id="visualisierung"></canvas>
-
-        <div class="regler">
-            <label for="lautstaerke">Lautstärke:</label>
-            <input type="range" id="lautstaerke" min="0" max="1" step="0.1" value="0.5">
-            <label for="effekt">Effekt:</label>
-            <select id="effekt">
-                <option value="none">Kein Effekt</option>
-                <option value="reverb">Reverb</option>
-                <option value="delay">Delay</option>
-                </select>
-            </div>
-
-        <div id="biofeedback">
+        <section id="biofeedback">
             <h2>Biofeedback</h2>
-            <p>Hier werden die Biofeedback-Daten angezeigt.</p>
-            </div>
+        </section>
 
-        <div id="effekte">
+        <section id="effekte">
             <h2>Effekte</h2>
-            <p>Hier werden die verfügbaren Effekte angezeigt und können ausgewählt werden.</p>
-            </div>
+        </section>
 
-        <div id="community">
+        <section id="community">
             <h2>Community</h2>
-            <p>Hier können sich Benutzer austauschen und vernetzen.</p>
-            </div>
+        </section>
 
-        <div id="einstellungen">
+        <section id="einstellungen">
             <h2>Einstellungen</h2>
-            <p>Hier können Benutzer Einstellungen für die App vornehmen.</p>
-            </div>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SyngVisibra</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
